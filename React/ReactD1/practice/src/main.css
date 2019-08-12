@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+
+.body {
+  background-image: url('./img/bg-img.png');
+  background-size: 100%;
+}
+header {
+  background-color: #fff;
+}
+.row .col-md-5 .header-logo-alterra {
+  padding-top: 11px;
+  vertical-align: center;
+}
+.row .header-menu-right {
+  font-family: 'Muli', serif;
+  font-weight: bold;
+  color: #19345e;
+  padding-top: 35px;
+  font-size: 13px;
+  text-align: center;
+}
+.row .header-menu-right .topMenu {
+  display: table;
+  float: right;
+}
+.row .header-menu-right .topMenu li {
+  display: table-cell;
+  padding-left: 30px;
+}
+#cewe-foto {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-top: 150px;
+}
+.main-body-text {
+  padding-top: 150px;
+  padding-left: 40px;
+}
+.main-body-text .main-body-text-1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #19345e;
+  padding-top: 30px;
+}
+.main-body-text .main-body-text-2 {
+  font-family: 'Roboto', sans-serif;
+  color: #19345e;
+  font-weight: 700;
+  font-size: 85px;
+  height: 110px;
+}
+.main-body-text .main-body-text-3 {
+  color: #19345e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+}
+.main-body-text .get-in-touch {
+  padding-top: 25px;
+}
+.main-body-text .get-in-touch .btn-get-in-touch {
+  background-color: #f47522;
+  color: #fff;
+  width: 150px;
+  border: #f47522 solid 2px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+.about-me {
+  background-color: #f4f7fc;
+  height: 132px;
+  width: 100%;
+}
+.about-me .row .about-me-text {
+  font-family: 'Roboto', sans-serif;
+  color: #19345e;
+  font-size: 45px;
+  font-weight: bold;
+  padding: 0px;
+  padding-top: 50px;
+  padding-left: 90px;
+}
+.colMain .main-content-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: #19345e;
+  padding: 0px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+}
+.colMain .main-content-table {
+  padding: 0px;
+  padding-left: 50px;
+  padding-bottom: 80px;
+  margin: 0;
+}
+.colMain .main-content-table table {
+  font-family: 'Muli', serif;
+  color: #19345e;
+}
+.colMain .main-content-table table tr {
+  border: #707070 1px solid;
+  text-align: center;
+}
+.main-content-image .main-content-image-dot {
+  position: absolute;
+  top: 500px;
+  left: 0;
+}
+.main-content-image .main-content-image-person {
+  border: 1px transparent black;
+  margin-top: 53px;
+  margin-left: 80px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+footer {
+  background-color: #19345e;
+  padding: 30px 0;
+}
+.footer-logo-alterra {
+  padding: 0px;
+}
+.social-content {
+  padding: 0px;
+}
+.social-content h5 {
+  padding: 0px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial;
+  padding-top: 10px;
+}
+.social-content .social-media {
+  display: table;
+  padding: 0px;
+}
+.social-content .social-media li {
+  display: table-cell;
+  padding: 0px;
+  padding-right: 8px;
+}
+.copyright {
+  border-left: 1px grey solid;
+  height: 100%;
+}
+.copyright h5 {
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: right;
+}
+.form-isi {
+  padding-right: 150px;
+  padding-left: 100px;
+}
+.form-isi h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 23px;
+  color: #19345e;
+  font-family: 'Muli', serif;
+}
+.form-group {
+  font-size: 20px;
+  color: #19345e;
+  font-family: 'Muli', serif;
+}
+.form-group span {
+  color: #FF0000;
+}
+.colForm {
+  background-image: url(./img/charles-rRWiVQzLm7k-unsplash.jpg);
+  background-size: cover;
+  color: blue;
+  background-repeat: no-repeat;
+  padding-left: 0;
+  width: 100%;
+  height: 792px;
+}
+.colForm .alterra {
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+.colForm .box-fit {
+  background-color: rgba(25, 52, 94, 0.65);
+  opacity: 65%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.foto {
+  width: 592px;
+  height: 792px;
+}
+.minimal {
+  -webkit-appearance: none;
+  background-image: url(./img/down-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 95% center;
+  background-color: #fff;
+}
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #19345e;
+  width: 460px;
+  height: 60px;
+}
+.form-controlarea {
+  width: 460px;
+  height: 120px;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+.form-control2 {
+  border-radius: 8px;
+  border: 1px solid #707070;
+  width: 460px;
+  height: 60px;
+}
+::placeholder {
+  color: #D5D5D5;
+}
+input {
+  color: #19345e;
+  padding: 10px;
+}
+.btn-submit {
+  background-color: #f47522;
+  color: #fff;
+  border: 2px solid #f47522;
+  width: 149.77px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+.number-phone {
+  -webkit-appearance: none;
+}
+.select {
+  color: #707070;
+}
+.form-control2:focus {
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: 2px solid #19345e;
+}
+#home a,
+#about a,
+#contact a {
+  text-decoration: none;
+  color: #19345e;
+}
+#home a:hover,
+#contact a:hover,
+#experience a:hover,
+#about a:hover {
+  color: #f47522;
+}
+@media (max-width: 1200px) {
+  header {
+    text-align: left;
+  }
+  .main-body-text-1 {
+    padding-left: 40px;
+  }
+  .main-body-text-2 {
+    font-size: 70px;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+  .main-body-text-3 {
+    font-size: 25px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+  }
+  .get-in-touch {
+    text-align: left;
+    padding-left: 40px;
+  }
+  .topMenu {
+    float: left;
+  }
+  .main-body-photo {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    text-align: left;
+  }
+  .main-body-text-1 {
+    padding-left: 40px;
+  }
+  .main-body-text-2 {
+    font-size: 50px;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+  .main-body-text-3 {
+    font-size: 25px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+  }
+  .get-in-touch {
+    text-align: left;
+    padding-left: 40px;
+  }
+  .topMenu {
+    float: left;
+  }
+  .main-body-photo {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .main-body-text-1 {
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+  }
+  .main-body-text-2 {
+    margin-bottom: 0;
+    font-size: 50px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .main-body-text-3 {
+    font-size: 25px;
+    padding: 0;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .header-logo-alterra {
+    text-align: center;
+  }
+  .get-in-touch {
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .main-body-photo {
+    text-align: center;
+    margin-top: 0;
+  }
+  .main-body-text {
+    padding: 0;
+    text-align: center;
+  }
+  #cewe-foto {
+    margin-top: 30px;
+  }
+  .topMenu li {
+    padding: 10px ;
+    text-align: center;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .main-body-text-1 {
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+  }
+  .main-body-text-2 {
+    margin-bottom: 0;
+    font-size: 50px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .main-body-text-3 {
+    font-size: 25px;
+    padding: 0;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .header-logo-alterra {
+    text-align: center;
+  }
+  .get-in-touch {
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .main-body-photo {
+    text-align: center;
+    margin-top: 0;
+  }
+  .main-body-text {
+    padding: 0;
+    text-align: center;
+  }
+  #cewe-foto {
+    margin-top: 30px;
+  }
+  .topMenu li {
+    font-size: 10px;
+    padding: 0;
+    float: left;
+    padding-left: 30px;
+  }
+  .topMenu {
+    float: left;
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .main-content-image-dot {
+    width: 50;
+    height: auto;
+    text-align: left;
+    left: 50px;
+    top: 250px;
+  }
+}
+@media (max-width: 991px) {
+  .main-content-table {
+    padding: 0;
+  }
+  .table-hp {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .main-content-image-person {
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .main-content-image-dot {
+    width: 50;
+    height: auto;
+    text-align: left;
+    left: 25px;
+    top: 220px;
+  }
+  .main-content-images {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    height: auto;
+    padding-top: 15px;
+  }
+  .social-media {
+    padding: 0;
+    margin: auto;
+  }
+  .footer-logo-alterra {
+    text-align: left;
+  }
+  .social-content li {
+    text-align: center;
+  }
+  .header-logo-alterra {
+    text-align: left;
+  }
+  .copyright {
+    border: 0cm;
+  }
+  .copyright h5 {
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 20px;
+    font-size: 10px;
+  }
+  .social {
+    align-items: center;
+  }
+  h5 {
+    text-align: center;
+    padding-right: 20px;
+  }
+  .main-content-paragraph {
+    padding-left: 10px;
+  }
+  .topMenu li {
+    padding: 10px ;
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  .main-content-table {
+    padding: 0;
+  }
+  .table-hp {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-content-image-person {
+    width: 40%;
+    height: auto;
+    margin-top: 50px;
+  }
+  .main-content-image-dot {
+    width: 50;
+    height: auto;
+    text-align: left;
+    left: 150px;
+    top: 200px;
+  }
+  .main-content-images {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    height: auto;
+    padding-top: 15px;
+  }
+  .social-media {
+    padding: 0;
+    margin: auto;
+    padding-right: 10px;
+  }
+  .footer-logo-alterra {
+    text-align: center;
+  }
+  .social-content li {
+    text-align: center;
+    padding-right: 10px;
+  }
+  .header-logo-alterra {
+    text-align: center;
+  }
+  .copyright {
+    border: 0cm;
+  }
+  .copyright h5 {
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 5  0px;
+    font-size: 10px;
+  }
+  .social {
+    align-items: center;
+  }
+  h5 {
+    text-align: center;
+    padding-right: 100px;
+  }
+  .main-content-paragraph {
+    padding-left: 10px;
+  }
+  .topMenu li {
+    padding: 10px ;
+    float: left;
+    padding-left: 30px;
+  }
+  .topMenu {
+    float: left;
+    text-align: center;
+  }
+  .main-content-images {
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .main-body-text-1 {
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+  }
+  .main-body-text-2 {
+    margin-bottom: 0;
+    font-size: 50px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .main-body-text-3 {
+    font-size: 25px;
+    padding: 0;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .header-logo-alterra {
+    text-align: center;
+  }
+  .get-in-touch {
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .main-body-photo {
+    text-align: center;
+    margin-top: 0;
+  }
+  .main-body-text {
+    padding: 0;
+    text-align: center;
+  }
+  #cewe-foto {
+    margin-top: 30px;
+  }
+  .topMenu li {
+    font-size: 10px;
+    padding: 0;
+    float: left;
+    padding-left: 30px;
+  }
+  .topMenu {
+    float: left;
+    text-align: center;
+  }
+}
+@media (max-width: 2000px) {
+  .form-isi {
+    padding: 0;
+  }
+  .form-control2 {
+    width: 100%;
+  }
+  .box-fit {
+    width: 100%;
+  }
+  .alterra {
+    width: 100%;
+  }
+  .form-controlarea {
+    width: 100%;
+  }
+  .gambarpanjang {
+    padding: 0;
+  }
+  .col-md-5 {
+    height: auto;
+  }
+  .box-fit {
+    height: 100%;
+  }
+  .button-submit {
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .form-isi {
+    padding: 0;
+  }
+  .form-control2 {
+    width: 100%;
+  }
+  .box-fit {
+    width: 100%;
+  }
+  .alterra {
+    width: 100%;
+  }
+  .form-controlarea {
+    width: 100%;
+  }
+  .gambarpanjang {
+    padding: 0;
+  }
+  .col-md-5 {
+    height: auto;
+  }
+  .box-fit {
+    height: 131px;
+  }
+  .button-submit {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .form-isi {
+    padding: 0;
+  }
+  .form-control2 {
+    width: 100%;
+  }
+  .box-fit {
+    width: 100%;
+    padding-right: 50px;
+  }
+  .alterra {
+    width: 100%;
+  }
+  .form-controlarea {
+    width: 100%;
+  }
+  .gambarpanjang {
+    padding: 0;
+  }
+  .col-md-5 {
+    height: auto;
+  }
+  .box-fit {
+    height: 131px;
+  }
+  .button-submit {
+    text-align: center;
+  }
+}
