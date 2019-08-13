@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
 
-
+#kategori {
+  color: #19345e;
+}
+.kategori {
+  color: #19345e;
+}
 .colWidth {
   padding-left: 0;
   width: 100%;

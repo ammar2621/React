@@ -3,11 +3,13 @@ import logo from "../img/logo-ALTA@2x.png";
 import logo1 from "../img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg";
 import Header from "../components/header";
 import "../styles/main.css";
+import Nav from "../MainRoute/mainRoute";
 
 export function Home() {
   return (
     <div className="body">
-      <Header />
+      {/* <Nav /> */}
+      {/* <Header /> */}
       {/* <header>
                 <div className="container">
                     <div className="row">

@@ -9,7 +9,6 @@ import "../styles/main.css";
 export function About() {
   return (
     <div>
-      <Header />
       {/* <header>
                 <div className="container">
                     <div className="row">
