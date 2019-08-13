@@ -19,7 +19,7 @@ class Headline extends React.Component {
     const self = this;
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=80d2f4e2bada4997960b2001f5d77815`
+        `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=96fa591bc9364d93b8bea70f171b3836`
       )
       .then(function(response) {
         self.setState({ headline: response.data.articles });

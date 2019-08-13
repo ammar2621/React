@@ -16,13 +16,33 @@ class Article extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  handleChange(event) {
+    event.preventDefault();
+    this.setState({ keyword: event.target.value }, () => {
+      axios
+        .get(
+          "https://newsapi.org/v2/everything?q=" +
+            this.state.keyword +
+            "&from=2019-07-13&sortBy=publishedAt&apiKey=96fa591bc9364d93b8bea70f171b3836"
+        )
+        .then(response => {
+          this.setState({ data: response.data.articles });
+          console.log(response);
+          // console.log(this.state.data);
+        })
+        .catch(error => {
+          console.log("terdapat eror ini :", error);
+        });
+    });
+  }
+
   componentDidMount() {
     const self = this;
     axios
       .get(
         "https://newsapi.org/v2/everything?q=" +
-          this.state.keyword +
-          "&from=2019-07-13&sortBy=publishedAt&apiKey=80d2f4e2bada4997960b2001f5d77815"
+          this.props.value +
+          "&from=2019-07-13&sortBy=publishedAt&apiKey=96fa591bc9364d93b8bea70f171b3836"
       )
       .then(function(response) {
         self.setState({ data: response.data.articles });
@@ -33,12 +53,24 @@ class Article extends React.Component {
       });
   }
 
-  handleChange(event) {
-    event.preventDefault();
-    this.setState({ keyword: event.target.value }, () => {
-      this.componentDidMount();
-    });
-  }
+  componentDidUpdate = prevProps => {
+    if (prevProps.value !== this.props.value) {
+      axios
+        .get(
+          "https://newsapi.org/v2/everything?q=" +
+            this.props.value +
+            "&from=2019-07-13&sortBy=publishedAt&apiKey=96fa591bc9364d93b8bea70f171b3836"
+        )
+        .then(response => {
+          this.setState({ data: response.data.articles });
+          console.log(response);
+          // console.log(this.state.data);
+        })
+        .catch(error => {
+          console.log("terdapat eror ini :", error);
+        });
+    }
+  };
 
   render() {
     return (

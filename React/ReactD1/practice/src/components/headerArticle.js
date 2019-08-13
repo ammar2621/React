@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../img/logo-ALTA@2x.png";
 import "../styles/main.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export function HeaderArt(props) {
   return (
@@ -18,16 +19,31 @@ export function HeaderArt(props) {
             <div className="col-md-9 header-menu-right text-left">
               <ul className="topMenu">
                 <li id="home">
-                  <a href="index.html">Sepak Bola</a>
+                  <Link
+                    to="/sepakbola"
+                    className="nav-link"
+                    // onClick={props.value}
+                  >
+                    Sepakbola
+                  </Link>
                 </li>
                 <li id="about">
-                  <a href="about-me.html">Ekonomi</a>
+                  <Link
+                    to="/economi"
+                    className="nav-link"
+                    // onClick={props.click}
+                  >
+                    Ekonomi
+                  </Link>
                 </li>
-                <li id="experience">
-                  <a>Politik</a>
-                </li>
-                <li id="contact">
-                  <a href="form.html">Hiburan</a>
+                <li id="about">
+                  <Link
+                    to="/politik"
+                    className="nav-link"
+                    // onClick={props.value}
+                  >
+                    Politik
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -44,17 +60,18 @@ export function HeaderArt(props) {
                   <div
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
+                    id="about"
                   >
-                    <a className="dropdown-item" href="#">
-                      Romantis
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      Lelucon
-                    </a>
-                    <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                    <Link to="/budaya" className="dropdown-item">
+                      Budaya
+                    </Link>
+                    <Link to="/sosial" className="dropdown-item">
+                      Sosial
+                    </Link>
+                    <div className="" />
+                    <Link to="/hukum" className="dropdown-item">
+                      Hukum
+                    </Link>
                   </div>
                 </li>
                 <li id="contact">
