@@ -38,7 +38,8 @@ class Headline extends React.Component {
                                 <div>
                                     <img src={value.urlToImage} className="card-img-top" />
                                     <div className="card-body">
-                                        <h4 className="card-title">{value.title}</h4>
+                                        <a href={value.url}><h4 className="card-title">{value.title}</h4></a>
+
                                         <p className="card-text">
                                         {value.description}
                                         </p>
