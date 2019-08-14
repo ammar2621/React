@@ -1,13 +1,23 @@
 import createStore from "unistore";
+import { longStackSupport } from "q";
 
-export const store = createStore({
-  name: "",
+export let store = createStore({
+  nama: "",
   email: "",
-  isLogin: ""
+  isLogin: false
 });
 
 export const actions = store => ({
-  setName(state) {
-    return;
+  setNama(state, value) {
+    return { nama: value };
+  },
+  setEmail(state, value) {
+    return { email: value };
+  },
+  setIsLogin(state) {
+    return { isLogin: true };
+  },
+  signOut(state) {
+    return { isLogin: false };
   }
 });

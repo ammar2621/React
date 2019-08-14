@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import Home from "./pages/Home";
 import { About } from "./pages/about";
 import { Contact } from "./pages/contactme";
 import Article from "./pages/article";
@@ -27,19 +26,24 @@ import Login from "./pages/login";
 import HeaderLogin from "./components/headerLogin";
 import Profile from "./pages/profile";
 import MainRouteNews from "./login/mainRouteNews";
+import { Provider } from "unistore/react";
+import { store } from "./components/store";
+import Home from "./components/home";
 
 const routing = (
-  <Router>
-    <HeaderLogin />
-    <Route exact path="/" component={Article} />
-    <Route exact path="/news" component={Article} />
-    <Route path="/contactus" component={Contact} />
-    <Route path="/aboutme" component={About} />
-    <Route path="/login" component={Login} />
-    <Route path="/profile" component={Profile} />
-    {/* <Route exact path="/news/:category" component={Article} /> */}
-    <Route path="/news/:source_name" component={Category} />
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <HeaderLogin />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/news" component={Article} />
+      <Route path="/contactus" component={Contact} />
+      <Route path="/aboutme" component={About} />
+      <Route path="/login" component={Login} />
+      <Route path="/profile" component={Profile} />
+      {/* <Route exact path="/news/:category" component={Article} /> */}
+      <Route path="/news/:source_name" component={Category} />
+    </Router>
+  </Provider>
 );
 ReactDOM.render(routing, document.getElementById("root"));
 

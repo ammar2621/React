@@ -11,29 +11,29 @@ class Headline extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      headline: []
+      data: []
     };
   }
 
-  componentDidMount() {
-    const self = this;
-    axios
-      .get(
-        `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=bd87053c3c904bb68859378455e6e579`
-      )
-      .then(function(response) {
-        self.setState({ headline: response.data.articles });
-        console.log(response);
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-  }
+  // componentDidMount() {
+  //   const self = this;
+  //   axios
+  //     .get(
+  //       `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=bd87053c3c904bb68859378455e6e579`
+  //     )
+  //     .then(function(response) {
+  //       self.setState({ data: response.data.articles });
+  //       console.log(response);
+  //     })
+  //     .catch(function(error) {
+  //       console.log(error);
+  //     });
+  // }
 
   render() {
     return (
       <div>
-        {this.state.headline.map((value, index) => {
+        {this.props.data.map((value, index) => {
           if (index < 1) {
             return (
               <div>

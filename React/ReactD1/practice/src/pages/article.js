@@ -6,6 +6,8 @@ import ListNews from "../components/listArticle";
 import Headline from "../components/headline";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
+import { connect } from "unistore/react";
+import { actions } from "../components/store";
 
 class Article extends React.Component {
   constructor(props) {
@@ -74,7 +76,7 @@ class Article extends React.Component {
   };
 
   render() {
-    if (JSON.parse(localStorage.getItem("isLogin")) === null) {
+    if (this.props.isLogin === false) {
       return <Redirect to={{ pathname: "/login" }} />;
     } else {
       return (
@@ -98,7 +100,7 @@ class Article extends React.Component {
               </div>
               <div className="col-md-8">
                 <div className="card mb-3">
-                  <Headline />
+                  <Headline data={this.state.data} />
                 </div>
               </div>
             </div>
@@ -110,4 +112,7 @@ class Article extends React.Component {
   }
 }
 
-export default Article;
+export default connect(
+  "nama, email, isLogin",
+  actions
+)(Article);

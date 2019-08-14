@@ -7,7 +7,7 @@ export function HeaderArt(props) {
   return (
     <div>
       <header>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row text-align-center">
             <div className="col-md-3 kategori align-self-center">
               <div className="kategori">

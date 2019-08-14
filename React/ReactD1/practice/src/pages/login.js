@@ -3,8 +3,11 @@ import axios from "axios";
 import { Redirect } from "react-router-dom";
 import { withRouter } from "react-router";
 import LoginForm from "../components/loginForm";
+import { connect } from "unistore/react";
+import { actions } from "../components/store";
+import HeaderLogin from "../components/headerLogin";
 
-const hostLogin = "https://login.free.beeceptor.com/login";
+const hostLogin = "https://ammar.free.beeceptor.com/login";
 
 class Login extends React.Component {
   constructor(props) {
@@ -29,6 +32,10 @@ class Login extends React.Component {
     this.setState({ login: { password: event.target.value } });
   }
 
+  handleSignOut() {
+    this.props.setIsLogin = "";
+  }
+
   handleLoginSubmit(event) {
     let data = {
       name: this.state.login.username,
@@ -42,16 +49,20 @@ class Login extends React.Component {
     const self = this;
     axios.post(hostLogin, data).then(function(response) {
       console.log(response);
-      localStorage.setItem("nama", response.data.nama);
-      localStorage.setItem("email", response.data.email);
-      localStorage.setItem("isLogin", 1);
-      self.props.history.push("/");
+      // localStorage.setItem("nama", response.data.nama);
+      // localStorage.setItem("email", response.data.email);
+      // localStorage.setItem("isLogin", 1);
+      self.props.setNama(response.data.nama);
+      self.props.setEmail(response.data.email);
+      self.props.setIsLogin(response.data.isLogin);
+      self.props.history.push("/news");
     });
   };
 
   renderRedirect = () => {
-    console.log(JSON.parse(localStorage.getItem("isLogin")));
-    if (JSON.parse(localStorage.getItem("isLogin")) == 1) {
+    //   // console.log(JSON.parse(localStorage.getItem("isLogin")));
+    //   // if (JSON.parse(localStorage.getItem("isLogin")) == 1) {
+    if (this.props.isLogin == 1) {
       return <Redirect to="/" />;
     }
   };
@@ -66,9 +77,13 @@ class Login extends React.Component {
           onSubmit={this.handleLoginSubmit}
           data={this.state.login}
         />
+        {/* <HeaderLogin onClick={this.handleSignOut} /> */}
       </div>
     );
   }
 }
 
-export default Login;
+export default connect(
+  "nama, email, isLogin",
+  actions
+)(Login);

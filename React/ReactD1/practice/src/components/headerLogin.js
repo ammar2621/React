@@ -1,11 +1,13 @@
 import React from "react";
 import logoAlta from "../img/logo-ALTA@2x.png";
 import { Link } from "react-router-dom";
+import { connect } from "unistore/react";
+import { actions } from "../components/store";
 
-function HeaderLogin() {
+function HeaderLogin(props) {
   return (
     <header>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-md-7">
             <div className="header-logo-alterra">
@@ -30,7 +32,7 @@ function HeaderLogin() {
                 <Link
                   to="/"
                   onClick={() => {
-                    localStorage.removeItem("isLogin");
+                    props.signOut();
                   }}
                 >
                   SIGN OUT
@@ -44,4 +46,7 @@ function HeaderLogin() {
   );
 }
 
-export default HeaderLogin;
+export default connect(
+  "nama, email, isLogin",
+  actions
+)(HeaderLogin);
