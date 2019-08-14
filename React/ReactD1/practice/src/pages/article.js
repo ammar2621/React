@@ -23,7 +23,7 @@ class Article extends React.Component {
         .get(
           "https://newsapi.org/v2/everything?q=" +
             this.state.keyword +
-            "&from=2019-07-13&sortBy=publishedAt&apiKey=96fa591bc9364d93b8bea70f171b3836"
+            "&from=2019-07-13&sortBy=publishedAt&apiKey=a9a9c32122374600a303613737904f9b"
         )
         .then(response => {
           this.setState({ data: response.data.articles });
@@ -42,7 +42,7 @@ class Article extends React.Component {
       .get(
         "https://newsapi.org/v2/everything?q=" +
           this.props.value +
-          "&from=2019-07-13&sortBy=publishedAt&apiKey=96fa591bc9364d93b8bea70f171b3836"
+          "&from=2019-07-13&sortBy=publishedAt&apiKey=a9a9c32122374600a303613737904f9b"
       )
       .then(function(response) {
         self.setState({ data: response.data.articles });
@@ -59,7 +59,7 @@ class Article extends React.Component {
         .get(
           "https://newsapi.org/v2/everything?q=" +
             this.props.value +
-            "&from=2019-07-13&sortBy=publishedAt&apiKey=96fa591bc9364d93b8bea70f171b3836"
+            "&from=2019-07-13&sortBy=publishedAt&apiKey=a9a9c32122374600a303613737904f9b"
         )
         .then(response => {
           this.setState({ data: response.data.articles });

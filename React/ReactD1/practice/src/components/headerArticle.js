@@ -20,7 +20,7 @@ export function HeaderArt(props) {
               <ul className="topMenu">
                 <li id="home">
                   <Link
-                    to="/sepakbola"
+                    to="/news/sepakbola"
                     className="nav-link"
                     // onClick={props.value}
                   >
@@ -29,7 +29,7 @@ export function HeaderArt(props) {
                 </li>
                 <li id="about">
                   <Link
-                    to="/economi"
+                    to="/news/economi"
                     className="nav-link"
                     // onClick={props.click}
                   >
@@ -38,7 +38,7 @@ export function HeaderArt(props) {
                 </li>
                 <li id="about">
                   <Link
-                    to="/politik"
+                    to="/news/politik"
                     className="nav-link"
                     // onClick={props.value}
                   >
@@ -62,14 +62,14 @@ export function HeaderArt(props) {
                     aria-labelledby="navbarDropdown"
                     id="about"
                   >
-                    <Link to="/budaya" className="dropdown-item">
+                    <Link to="/news/budaya" className="dropdown-item">
                       Budaya
                     </Link>
-                    <Link to="/sosial" className="dropdown-item">
+                    <Link to="/news/sosial" className="dropdown-item">
                       Sosial
                     </Link>
                     <div className="" />
-                    <Link to="/hukum" className="dropdown-item">
+                    <Link to="/news/hukum" className="dropdown-item">
                       Hukum
                     </Link>
                   </div>
