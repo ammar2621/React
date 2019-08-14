@@ -8,7 +8,7 @@ function Profile(props) {
     return (
       <div>
         <h4>nama : </h4>
-        <h4>{localStorage.getItem("nama")}</h4>
+        <h4>{localStorage.getItem("username")}</h4>
         <h4>email : </h4>
         <h4>{localStorage.getItem("email")}</h4>
       </div>
